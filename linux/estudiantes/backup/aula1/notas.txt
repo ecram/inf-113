@@ -1,0 +1,3 @@
+Alumno: nombre completo
+E-mail: su email
+Especialidad: Ing. de Sistemas

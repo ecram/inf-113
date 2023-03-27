@@ -1,0 +1,8 @@
+cp - copy files and directories
+rm - remove files or directories
+mv - move (rename) files
+mkdir - make directories
+rmdir - remove empty directories
+touch - change file timestamps
+ls - list directory contents
+

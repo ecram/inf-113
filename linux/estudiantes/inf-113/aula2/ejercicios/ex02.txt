@@ -1,0 +1,23 @@
+Describa 3 opciones de ls:
+
+-a, --all
+              do not ignore entries starting with .
+
+-l     use a long listing format
+
+-s, --size
+              print the allocated size of each file, in blocks
+
+
+cp:
+-R, -r, --recursive
+              copy directories recursively
+
+mkdir:
+-v, --verbose
+              print a message for each created directory
+
+rm:
+-d, --dir
+              remove empty directories
+
