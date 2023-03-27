@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estructuras de control en JavaScript</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+		body {
+			padding:40px;
+			font-size:20px;
+			font-family:helvetica;
+		}
+	</style>
+	<script type="text/javascript">
+		var diaSemana="martes";
+		var edad=43;
+		switch (diaSemana){
+			case "lunes": if (edad<35)
+								alert("El precio de la entrada es de 2€");
+							else
+								alert("El precio de la entrada es de 5€");
+							break;
+			case "martes": if (edad<25)
+								alert("El precio de la entrada es de 2€");
+							else{
+								if ((edad>25) && (edad<50))
+									alert("El precio de la entrada es de 5€");
+								else
+									alert("El precio de la entrada es de 7€");
+							}
+							break;
+			case "miercoles": if (edad<18)
+									alert("El precio de la entrada es de 3€");
+								else{
+									if ((edad>18) && (edad<50))
+										alert("El precio de la entrada es de 5€");
+									else
+										alert("El precio de la entrada es de 8€");
+									}
+								break;
+			case "jueves": if (edad<18)
+									alert("El precio de la entrada es de 5€");
+								else
+									alert("El precio de la entrada es de 10€");
+								break;
+			default: alert("El precio de la entrada es 10€");
+
+		}
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

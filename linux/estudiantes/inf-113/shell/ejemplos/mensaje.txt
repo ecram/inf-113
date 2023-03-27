@@ -1,0 +1,2 @@
+Estimado USUARIO,
+bienvenido al sistema!

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estructuras de control en JavaScript</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style>
+		*{
+			margin:5px;
+			font-family:helvetica;
+			font-size:20px;
+		}
+	</style>
+<script type="text/javascript">
+	var valor1=40;
+	var valor2=20;
+	var nombre="John"
+	var aprobado=true;
+
+	if ( (valor1 >= valor2) && (nombre=="John") )
+		document.write("La variable valor1 es mayor que valor2 y el nombre es John<br><br>");
+	else
+		document.write("La variable valor1 es menor que valor2 o bien el nombre no es John<br><br>");
+
+	if (aprobado)
+		document.write ("La variable aprobado tiene valor true<br><br>");
+	else{
+		document.write ("La variable aprobado es false<br><br>");
+		valor1=40;
+	}
+
+	if ( (!aprobado) || (valor2>30) )
+		document.write("La variable aprobado es false o valor2 es mayor de 30<br><br>");
+	else
+		document.write("Ni la variable aprobado es true ni valor2 es mayor de 30<br><br>");
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+grep: /tmp/mapping-root: No existe tal dispositivo o dirección
+grep: /tmp/OSL_PIPE_0_SingleOfficeIPC_bfa67ba891bd9b76f67a649f29db7e59: No existe tal dispositivo o dirección

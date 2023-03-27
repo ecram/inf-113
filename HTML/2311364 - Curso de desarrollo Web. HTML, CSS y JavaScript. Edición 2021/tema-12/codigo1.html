@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    h1, h2{
+        margin: 1px;
+    }
+    div.hijo{
+        margin: 5px;
+        border: 1px solid;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    div.horizontal{
+        padding: 5px;
+        border: 2px solid;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid;
+    }
+    div.horizontal-inverso{
+        padding: 5px;
+        border: 2px solid;
+        display: flex;
+        flex-direction: row-reverse;
+        border: 1px solid;
+    }
+    div.vertical{
+        padding: 5px;
+        border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+    }
+    div.vertical-inverso{
+        padding: 5px;
+        border: 2px solid;
+        display: flex;
+        flex-direction: column-reverse;
+        border: 1px solid;
+    }
+    
+</style>
+<body>
+    <h2>flex-direction: row</h2>
+    <div class="horizontal">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>flex-direction: row-reverse</h2>
+    <div class="horizontal-inverso">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>flex-direction: column</h2>
+    <div class="vertical">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>flex-direction: column-reverse</h2>
+    <div class="vertical-inverso">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+</body>
+</html>

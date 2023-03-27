@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    h1, h2{
+        margin: 1px;
+    }
+    div.hijo{
+        margin: 5px;
+        border: 1px solid;
+        min-width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    div.container{
+        width: 90%;
+        padding: 5px;
+        display: flex;
+        border: 2px solid;
+        margin-bottom: 30px;
+
+    }
+    div.container.flex-start{
+        justify-content: flex-start;
+    }
+    div.container.flex-end{
+        justify-content: flex-end;
+    }
+    div.container.center{
+        justify-content: center;
+    }
+    div.container.space-between{
+        justify-content: space-between;
+    }
+
+    div.container.space-around{
+        justify-content: space-around;
+    }
+    
+    
+</style>
+<body>
+    <h2>justify-content: flex-start</h2>
+    <div class="container flex-start">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>justify-content: flex-end</h2>
+    <div class="container flex-end">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>justify-content: center</h2>
+    <div class="container center">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+    </div>
+    <h2>justify-content: space-between</h2>
+    <div class="container space-between">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+    </div>
+    <h2>justify-content: space-around</h2>
+    <div class="container space-around">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+    </div>
+  </body>
+</html>

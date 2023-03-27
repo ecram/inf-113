@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Texto y fuentes</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<style type="text/css">
+			.texto1{
+				width: 750px;
+				border: 1px solid black;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: clip;
+			}
+			.texto2{
+				width: 750px;
+				border: 1px solid black;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.texto3{
+				width: 300px;
+				border: 1px solid black;
+				word-break: keep-all;
+			}
+			.texto4{
+				width: 300px;
+				border: 1px solid black;
+				word-break: break-all;						}
+		</style>
+	</head>
+	<body>
+	<h3>En este primer párrafo se suprimirá la parte sobrante del texto. Propiedad: propiedad "text-overflow: clip"</h3>
+	<div class="texto1">
+		A principios del siglo XXI, la Tyrell Corporation desarrolló un nuevo tipo de robot llamado Nexus, un ser virtualmente idéntico al hombre y conocido como Replicante.
+		Los Replicantes Nexus-6 eran superiores  en fuerza y agilidad.
+	</div>
+
+	<h3>Párrafo configurado para agregar puntos suspensivos al final usando la propiedad "text-overflow: ellipsis"</h3>
+	<div class="texto2">
+		A principios del siglo XXI, la Tyrell Corporation desarrolló un nuevo tipo de robot llamado Nexus, un ser virtualmente idéntico al hombre y conocido como Replicante.
+		Los Replicantes Nexus-6 eran superiores  en fuerza y agilidad.
+	</div>
+	<h3>En el siguiente bloque de texto se mantienen todos los saltos línea usando la propiedad "word-break: keep-all"</h3>
+	<div class="texto3">
+		A principios del siglo XXI, la Tyrell Corporation desarrolló un nuevo tipo de robot llamado Nexus, un ser virtualmente idéntico al hombre y conocido como Replicante.
+		Los Replicantes Nexus-6 eran superiores  en fuerza y agilidad y al menos iguales en inteligencia, a los ingenieros de genética que los crearon.
+	</div>
+
+	<h3>En este último párrafo si que se producen todos los saltos de línea necesarios. Propiedad "word-break: break-all"</h3>
+	<div class="texto4">
+		A principios del siglo XXI, la Tyrell Corporation desarrolló un nuevo tipo de robot llamado Nexus, un ser virtualmente idéntico al hombre y conocido como Replicante.
+		Los Replicantes Nexus-6 eran superiores  en fuerza y agilidad y al menos iguales en inteligencia, a los ingenieros de genética que los crearon.
+	</div>
+</body>
+</html>

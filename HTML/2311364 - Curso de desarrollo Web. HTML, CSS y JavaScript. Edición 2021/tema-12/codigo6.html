@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    h1, h2{
+        margin: 1px;
+    }
+    div.hijo{
+        margin: 5px;
+        border: 1px solid;
+        font-size: 18px;
+    }
+    div.container{
+        width: 800px;
+        padding: 5px;
+        display: flex;
+        border: 2px solid;
+        margin-bottom: 30px;
+        height: 250px;
+    }
+    div.hijo.flex-grow-1{
+        flex-grow: 0;
+    }
+    div.hijo.flex-grow-2{
+        flex-grow: 1;
+    }
+    div.hijo.flex-grow-3{
+        flex-grow: 3;
+    }
+    div.hijo.flex-grow-4{
+        flex-grow: 5;
+    }
+
+    div.hijo.flex-shrink-1{
+        flex-basis: 210px;
+        flex-shrink: 0;
+    }
+    div.hijo.flex-shrink-2{
+        flex-basis: 210px;
+        flex-shrink: 0;
+    }
+    div.hijo.flex-shrink-3{
+        flex-basis: 220px;
+        flex-shrink:1;
+    }
+    div.hijo.flex-shrink-4{
+        flex-basis: 210px;
+        flex-shrink: 0;
+    }
+       
+    
+</style>
+<body>
+    <h2>Propiedad flex-grow</h2>
+    <div class="container">
+        <div class="hijo flex-grow-1">flex-grow: 0</div>
+        <div class="hijo flex-grow-2">flex-grow: 1</div>
+        <div class="hijo flex-grow-3">flex-grow: 3</div>
+        <div class="hijo flex-grow-4">flex-grow: 5</div>
+    </div>
+    <h2>Propiedad flex-shrink</h2>
+    <div class="container">
+        <div class="hijo flex-shrink-1">flex-shrink: 0</div>
+        <div class="hijo flex-shrink-2">flex-shrink: 1</div>
+        <div class="hijo flex-shrink-3">flex-shrink: 3</div>
+        <div class="hijo flex-shrink-4">flex-shrink: 5</div>
+    </div>
+   </body>
+</html>

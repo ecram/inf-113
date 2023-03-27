@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>El Objeto String</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+		body {
+			padding:40px;
+			font-size:20px;
+			font-family:helvetica;
+		}
+	</style>
+	<script type="text/javascript">
+		var cadena = "La gata sobre el tejado de zinc"
+		document.write("Cadena de texto: "+cadena+"<br>");
+		document.write("Longitud de la cadena de texto: "+cadena.length+"<br>");
+		var pos=cadena.indexOf("gata");
+		document.write("Posición de la primera aparición de la palabra 'gata': "+pos+"<br>");
+		var subcadena=cadena.substring(pos,7);// subcadena 
+		document.write("Subcadena: "+subcadena+"<br>");
+		document.write("Conversión de la cadena en enlace: "+cadena.link("http://www.filmaffinity.com/es/film578097.html")+"<br>");
+		document.write("Tamaño de fuente grande: "+cadena.big()+"<br>");
+		document.write("Tamaño de fuente pequeño: "+cadena.small()+"<br>");
+		document.write("Cadena de texto en cursiva: "+cadena.italics()+"<br>");
+		document.write("Cadena de texto tachada: "+cadena.strike()+"<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

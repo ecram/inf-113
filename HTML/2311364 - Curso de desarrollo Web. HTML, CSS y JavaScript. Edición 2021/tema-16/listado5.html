@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularios y JavaScript</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	</head>
+	<div style="margin:60px;">
+	<body>
+		<form name="datosPersonales" id="datosPersonales" method="post" action="">
+			<label for="nombre">NOMBRE:</label>
+			<input type="text" id="nombre" name="nombre" value="">
+			<label for="apellidos">APELLIDOS:</label>
+			<input type="text" id="apellidos" name="apellidos" value="">
+			<label for="apellidos">ESTADO CIVIL:</label>
+			<select id="estadoCivil" name="estadoCivil">
+				<option value="1">Soltero</option>
+				<option value="2" selected>Casado</option>
+				<option value="3">Divorciado</option>
+				<option value="4">Viudo</option>
+			</select>
+			<label for="profesion">PROFESION:</label>
+			<input type="radio" name="profesion" value="autonomo"> Autonómo
+			<br> 
+			<input type="radio" name="profesion" value="ajena"> Trabajador por cuenta ajena
+			<br> 
+			<input type="radio" name="profesion" value="paro"> Desempleado
+			<br> 
+			<input type="radio" name="profesion" value="jubilado"> Jubilado
+			<br> 
+			<label for="comentarios">COMENTARIOS:</label>
+			<textarea id="comentarios" name="comentarios" rows="14" cols="50"></textarea>
+			<input type="submit" id="enviar_datos" name="enviar_datos" value="Enviar">
+		</form>
+	</body>
+	</div>
+</html>

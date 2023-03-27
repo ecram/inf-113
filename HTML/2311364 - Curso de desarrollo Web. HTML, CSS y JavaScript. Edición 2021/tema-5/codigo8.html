@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta cinematográfica</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+<body>
+<div id="contenedor">
+<h2>Cuestionario de Cine</h2>
+	<form id="formulario1" name="formulario1" method="post" action="data.php">
+	<fieldset id="datos_personales">
+	<legend>Datos personales</legend>
+		<label for="nombre">Nombre:</label><br>
+		<input type="text" name="nombre" id="nombre"><br>
+		<label for="apellidos">Apellidos:</label><br>
+		<input type="text" name="apellidos" id="apellidos"><br>
+		<label for="dni">DNI:</label><br>
+		<input type="text" name="dni" id="dni" maxlength="9"><br>
+		<label for="edad">Edad:</label><br>
+		<input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+		<label for="sexo">Sexo:</label><br>
+		<select id="sexo" name="sexo">
+		<option value="X" selected="selected">...</option>
+		<option value="M">Másculino</option>
+		<option value="F">Femenino</option>
+		</select>
+	</fieldset>
+	<fieldset id="mejor_pelicula">
+	<legend>Mejor Película</legend>
+		<input type="radio" name="pelicula" value="11">&nbsp;Centauros del desierto<br>
+		<input type="radio" name="pelicula" value="22">&nbsp;El hombre que mató a Liberty Valance<br>
+		<input type="radio" name="pelicula" value="33">&nbsp;Rio Rojo<br>
+	</fieldset>
+	<fieldset id="no_vistas">
+	<legend>Selecciona las películas que hayas visto</legend>
+		<input type="checkbox" name="rio" id="rio" value="111">&nbsp;Rio Bravo<br>
+		<input type="checkbox" name="tren" id="tren" value="222">&nbsp;El último tren a Gun Hill<br>
+		<input type="checkbox" name="solo" id="solo" value="333">&nbsp;Sólo ante el peligro<br>
+		<input type="checkbox" name="mision" id="mision" value="222">&nbsp;Misión de audaces<br>
+		<input type="checkbox" name="sargento" id="sargento" value="333">&nbsp;El sargento negro<br>
+	</fieldset>
+	<fieldset id="grupo_argumento">
+		<legend>Argumento de tu película preferida</legend>
+		<textarea id="argumento" name="argumento" rows="14" cols="50"></textarea>
+	</fieldset>
+	<br>
+	<input type="reset" value="Borrar formulario">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Enviar">
+	</form>
+</div>	
+</body>
+</html>

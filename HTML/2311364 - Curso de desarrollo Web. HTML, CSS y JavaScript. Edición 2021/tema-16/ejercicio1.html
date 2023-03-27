@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 1</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link href="css/ejercicio1.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	<h1>Ejercicio 1</h1>
+		<form name="datosPersonales" id="datosPersonales" method="post" action="">
+			<label for="nombre">NOMBRE:</label>
+			<input type="text" id="nombre" name="nombre" value=""><br>
+			<label for="apellidos">APELLIDOS:</label>
+			<input type="text" id="apellidos" name="apellidos" value=""><br>
+			<label for="apellidos">ESTADO CIVIL:</label>
+			<select id="estadoCivil" name="estadoCivil">
+				<option value="0" selected="selected">…</option>
+				<option value="1">Soltero</option>
+				<option value="2">Casado</option>
+				<option value="3">Divorciado</option>
+				<option value="4">Viudo</option>
+			</select>
+			<br>
+			<label>IDIOMAS:</label><br>
+			<input type="checkbox" name="idioma1" id="idioma1" value="Castellano">Castellano<br>
+			<input type="checkbox" name="idioma2" id="idioma2" value="Inglés">Inglés<br>
+			<input type="checkbox" name="idioma3" id="idioma3" value="Francés">Francés<br>
+			<label>PROFESION:</label>
+			<br>
+			<input type="radio" name="profesion" id="profesion1" value="autonomo"> Autonómo
+			<br> 
+			<input type="radio" name="profesion" id="profesion2" value="ajena"> Trabajador por cuenta ajena
+			<br> 
+			<input type="radio" name="profesion" id="profesion3" value="paro"> Desempleado
+			<br> 
+			<input type="radio" name="profesion" id="profesion4" value="jubilado"> Jubilado
+			<br> 
+			<label for="comentarios">COMENTARIOS:</label>
+			<br>
+			<textarea id="comentarios" name="comentarios" rows="14" cols="50"></textarea>
+			<br>
+			<input type="submit" id="enviar_datos" name="enviar_datos" value="Enviar">
+			<input type="button" id="mostrar_datos" name="mostrar_datos" value="Mostrar">
+		</form>
+	</body>
+</html>

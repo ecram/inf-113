@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    h1, h2{
+        margin: 1px;
+    }
+    div.hijo{
+        margin: 5px;
+        border: 1px solid;
+        min-width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    div.horizontal-nowrap{
+        width: 100px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        border: 2px solid;
+    }
+    div.horizontal-wrap{
+        width: 100px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid;
+    }
+    div.horizontal-wrap-reverse{
+        width: 100px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        border: 2px solid;
+    }
+    
+    
+</style>
+<body>
+    <h2>flex-wrap: nowrap</h2>
+    <div class="horizontal-nowrap">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>flex-wrap: wrap</h2>
+    <div class="horizontal-wrap">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h2>flex-wrap: wrap-reverse</h2>
+    <div class="horizontal-wrap-reverse">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+    </div>
+  </body>
+</html>

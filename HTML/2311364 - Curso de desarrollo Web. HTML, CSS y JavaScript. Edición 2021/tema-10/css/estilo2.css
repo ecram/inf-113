@@ -1,0 +1,52 @@
+body{
+	font-family:helvetica, verdana;	
+}
+div{
+	padding:10px;
+}
+a{
+	color:#4a64ff;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover{
+	border-bottom:1px dotted #4a64ff;
+}
+div#contenedor{
+	margin:30px 30px 0px 30px;
+	color:#000000;
+	border:1px solid #000000;
+}
+div#titulo{
+	font-size:35px;
+	font-weight:bold;	
+	text-align:center;
+	text-shadow:2px 2px #CCCCCC;
+	border-bottom:1px solid #000000;
+	margin-bottom:20px;
+	margin-top:10px;
+	padding:0px;
+}
+img#foto{
+	float:left;
+	border:1px solid #000000;
+	margin:14px 10px 0px 0px;
+	padding:4px;
+}
+p{
+	text-align:justify;	
+	font-size:14px;		
+	text-indent:40px;
+}
+.titulo_parrafo{
+	font-size:18px;
+	font-weight:bold;
+	padding:0px;
+}				
+div#pie{
+	margin-right:30px;
+	text-align:right;
+	font-size:13px;
+	font-style:italic;
+	color:#646464;
+}

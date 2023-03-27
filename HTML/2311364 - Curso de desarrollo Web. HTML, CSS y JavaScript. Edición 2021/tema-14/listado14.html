@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funciones en JavaScript</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+		body {
+			padding:40px;
+			font-size:20px;
+			font-family:helvetica;
+		}
+	</style>
+<script type="text/javascript">
+// se define la función que realiza la suma
+	function mayorMenor (a,b){
+		if (a>b)
+			return a;
+		else{
+			if (a<b)
+				return b;
+			else
+				return 0; //son iguales
+		}
+	}
+
+	var numeroMayor= mayorMenor (4,5);
+	if (numeroMayor!=0) // si es distinto de cero sabemos que no son iguales
+		alert("El número mayor es: "+ numeroMayor);
+	else
+		alert ("Los números son iguales");
+</script>
+</head>
+<body>
+
+</body>
+</html>

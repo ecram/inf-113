@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    h1, h2{
+        margin: 1px;
+    }
+    div.hijo{
+        margin: 5px;
+        border: 1px solid;
+
+        font-size: 12px;
+    }
+    div.container{
+        width: 45%;
+        padding: 5px;
+        display: flex;
+        border: 2px solid;
+        margin-bottom: 20px;
+        height: 170px;
+    }
+    div.container.flex-start{
+        align-items: flex-start;
+    }
+    div.container.flex-end{
+        align-items: flex-end;
+    }
+    div.container.center{
+        align-items: center;
+    }
+    div.container.stretch{
+        align-items: stretch;
+    }
+
+    div.container.baseline{
+        align-items: baseline;
+    }
+    
+    
+</style>
+<body>
+    <h2>align-items: flex-start</h2>
+    <div class="container flex-start">
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </div>
+
+    </div>
+    <h2>align-items: flex-end</h2>
+    <div class="container flex-end">
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </div>
+
+    </div>
+    <h2>align-items: center</h2>
+    <div class="container center">
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </div>
+    </div>
+    <h2>align-items: stretch</h2>
+    <div class="container stretch">
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </div>
+    </div>
+    <h2>align-items: baseline</h2>
+    <div class="container baseline">
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+        <div class="hijo">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </div>
+    </div>
+  </body>
+</html>

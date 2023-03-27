@@ -1,0 +1,74 @@
+body{
+	font-family:helvetica, verdana;	
+	font-size:18px;
+}
+fieldset{
+	border:1px dotted #000000;
+	margin-bottom:10px;
+}
+fieldset#grupo_fechas{
+	margin-top:10px;
+	width:390px;
+}
+label{
+	display:block;
+	color:#696a6a;
+	font-weight:bold;
+}
+legend{
+	color:#267fff;
+	font-size:25px;
+	font-weight:bold;
+}
+legend#legend_fechas{
+	font-size:20px;
+	color:#696a6a;
+}
+input, select, textarea{
+	border:1px solid #000000;
+	font-size:18px;
+	width:200px;
+	margin-bottom:7px;
+	padding:5px;
+	text-align:center;
+	background-color:#fffad4;
+}
+input:focus, textarea:focus{
+	background-color:#FFFFFF;
+}
+input#apellidos{
+	width:400px;
+}
+input#edad{
+	width:50px;
+}
+input#boton_enviar{
+	background-color:#267fff;
+	color:#FFFFFF;
+	font-weight:bold;
+	border-left:0px;
+	border-top:0px;
+	border-bottom:2px solid #CCCCCC;
+	border-right:2px solid #CCCCCC;
+}
+select{
+	width:70px;
+	padding:0px;
+	text-align:left;
+}
+select#sexo{
+	width:120px;
+}
+textarea{
+	width:500px;
+	height:150px;
+	text-align:justify;
+} 
+div.fecha{
+	float:left;
+	margin:5px;
+}
+div#capa_enviar{
+	float:right;
+	margin:5px;
+}

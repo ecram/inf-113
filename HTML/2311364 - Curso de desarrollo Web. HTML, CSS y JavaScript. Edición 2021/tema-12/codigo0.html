@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    div.hijo{
+        margin: 10px;
+        border: 1px solid;
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+    }
+    div.bloque{
+        padding: 10px;
+        border: 2px solid;
+        display: flex;
+        border: 1px solid;
+    }
+    div.en-linea{
+        padding: 10px;
+        border: 2px solid;
+        display: inline-flex;
+        border: 1px solid;
+    }
+</style>
+<body>
+    <h1>display: flex</h1>
+    <div class="bloque">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+    <h1>display: inline-flex</h1>
+    <div class="en-linea">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+
+    </div>
+</body>
+</html>
