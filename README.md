@@ -1,1 +1,4 @@
-# inf-113
+# inf-113 - Programación Web I
+
+MSc. Marcelo Palma Salas
+
