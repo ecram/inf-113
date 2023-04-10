@@ -10,13 +10,51 @@
 	background-color: #5499C7;
 }
 
+#login{
+	margin-top: 4%;
+	text-align: center;
+}
+
 #login form{
 	width: 400px;
 	text-align-last: center;
+	display: inline-block;
+}
+
+#login input{
+	border-radius: 10px;
+	height: 35px;
+	margin: 5px;
 }
 
 button{
+	margin-top: 20px;
 	background-color: #2C3E50;
 	color: white;	
 	font-size: 17px;
+	border-radius: 10px;
+	width: 150px;
+	height: 30px;
+}
+
+.checkbox{
+	display: inline;
+}
+
+p.checkbox{
+	font-family: Arial;
+	font-size: 18px;
+	color: #FFF;
+}
+
+#login input.checkbox{
+	width: 20px;
+	height: 20px;
+}
+
+#login .img{
+	margin: 12px;
+	width: 28px;
+	height: 28px;
+	position: absolute;
 }

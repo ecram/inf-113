@@ -4,8 +4,86 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bienvenidos al Sistema Web</title>
+	<link rel="stylesheet" type="text/css" href="css/style_pagina2.css">
 </head>
-<body>
+<body id="formdatos">
 	<h1 style="font-family: Arial, Verdana; text-align: center;">Bienvenidos al Sistema Web</h1>
+	<h1>Formulario de Datos</h1>
+	<h1>Datos del Perfil</h1>
+	<form action="pagina3.html">
+		<img src="img/perfil.png">
+		<fieldset>
+			<legend>Datos</legend>
+			<table border=0>
+				<tr>
+					<td>Fecha de Nacimiento:</td>
+					<td><input type="date"></td>
+				</tr>
+				<tr>
+					<td>Ingrese su foto:</td>
+					<td><input type="file" name=""></td>
+				</tr>
+				<tr>
+					<td>Nacionalidad:</td>
+						<td>
+							<input type="text" name="" list="nacionalidad">
+							<datalist id="nacionalidad">
+							<option>Boliviana</option>
+							<option>Peruana</option>
+							<option>Colombiana</option>
+							<option>Brasilera</option>
+						</td>
+					</datalist>
+				</tr>
+				<tr>
+					<td>Color favorito:</td>
+					<td><input type="color" name=""></td>
+				</tr>
+				<tr>
+					<td>Sexo:</td>
+					<td>
+						<input type="radio" name="sexo" value="Femenino" checked>Femenino
+						<input type="radio" name="sexo" value="Masculino">Masculino
+					</td>
+				</tr>
+				<tr>
+					<td>Edad:</td>
+					<td><input type="number" name="edad" min="18"></td>
+				</tr>
+				<tr>
+					<td>Dirección:</td>
+					<td><textarea rows="5" cols="20"></textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Temas</legend>
+			<p>Elija el tema de su interés.</p>
+			<input type="radio" name="tema" value="Deporte" checked>Deporte<br>
+			<input type="radio" name="tema" value="Arte">Arte<br>
+			<input type="radio" name="tema" value="Danza">Danza<br>
+			<input type="radio" name="tema" value="Computación">Computación<br>
+			<input type="radio" name="tema" value="Música">Música<br>
+			<input type="radio" name="tema" value="Literatura">Literatura<br>
+			<input type="radio" name="tema" value="Informática">Informática<br>
+			<p>Lecturas de su interés:</p>
+			<select multiple>
+				<option>Ficción</option>
+				<option>Terror</option>
+				<option>Románces</option>
+				<option>Psicológicos</option>
+				<option>Autoayuda</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Aficiones</legend>
+			<input type="checkbox" name="afición" value="Deporte">Deporte<br>
+			<input type="checkbox" name="afición" value="Arte">Arte<br>
+			<input type="checkbox" name="afición" value="Informática">Informática<br>
+			<input type="checkbox" name="afición" value="Videojuegos">Videojuegos<br>
+		</fieldset>
+		<br>
+		<button class="b1" type="submit">Enviar Formulario</button>
+	</form>
 </body>
 </html>
