@@ -1,0 +1,22 @@
+.control{
+	padding-right: 45px;
+	font-size: 17px;
+}
+
+#logindatos{
+	border: nome;
+	margin-top: 5px;
+	border-radius: 10px;
+	background-color: #5499C7;
+}
+
+#login form{
+	width: 400px;
+	text-align-last: center;
+}
+
+button{
+	background-color: #2C3E50;
+	color: white;	
+	font-size: 17px;
+}

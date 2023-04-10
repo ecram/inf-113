@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Creacion de Cuenta</title>
+	<link rel="stylesheet" type="text/css" href="css/style_pagina.css">
+</head>
+<body id="login">
+	<form action="pagina2.html">
+		<h1>Crear Cuenta</h1>
+		<fieldset id="logindatos">
+			<input type="text" name="" pattern="[a-zA-Z\s]+$" title="Solo se acepta letras." placeholder="Nombre" required="/" class="control">
+			<br>
+			<input type="tel" name="" placeholder="Teléfono" pattern="[0-99999999]" title="Ingrese solo números" required="/" class="control">
+			<br>
+			<input type="correo" name="" placeholder="Correo electrónico" pattern="[a-zA-Z\s]+$" required="/" class="control">
+			<br>
+			<input type="password" name="" placeholder="Contraseña" required="/" class="control">
+			<br><br>
+			<input type="checkbox" name="" value="acepta" class="checkbox">
+			<p>Acepta términos y condiciones</p>
+			<button type="submit">Crear Cuenta</button>
+			<button type="reset">Borrar</button>
+		</fieldset>
+	</form>
+</body>
+</html>

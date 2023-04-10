@@ -1,0 +1,33 @@
+#nuevo1{		
+	font-size: 25px;
+	font-style: italic;
+}
+
+#nuevo2{		
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	color: #2E86C1;
+	font-weight: bold;
+}
+
+#p1{
+	font-weight: bold; 
+	background-color: #FFD133;
+}
+
+font{
+	text-decoration: underline;
+	font-family: verdana, arial;
+}
+
+th{
+	background-color: #CB4335;
+}
+
+td{
+	text-decoration: underline;
+	font-family: arial, verdana;
+	background-color: #909497;
+}
+
