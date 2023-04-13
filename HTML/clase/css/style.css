@@ -4,3 +4,11 @@ body{
 	background-color:  #d7dbdd;
 	font-family: Arial, Verdana;
 }
+
+input{
+	font-size: 20px;
+}
+
+#i1{
+	color: blue;
+}
