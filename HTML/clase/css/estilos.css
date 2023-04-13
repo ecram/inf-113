@@ -1,6 +1,7 @@
 body {
 	background-color: gray;
 	color: white;
+	font-family: Arial;
 }
 
 h1 {
@@ -11,5 +12,6 @@ h1 {
 p {
 	font-size: 18px;
 	text-align: justify;
+	color: aqua;
 }
 
