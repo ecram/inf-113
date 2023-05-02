@@ -1,0 +1,40 @@
+body{
+	font-family: Arial;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 2.5em;
+	overflow: hidden;
+	background-color: #10192D;
+}
+nav li{
+	line-height: 2.5em;
+}
+nav a{
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a{
+	background-color: #111;
+}
+
+nav>ul{
+	width: 100%;
+}
+nav>ul>li{
+	float: left;
+}
+nav>ul>li>ul{
+	position: absolute;
+	display: none;
+}
+nav>ul>liL:hover ul{
+	display: block;
+}
+nav>ul>li>ul>li{
+	background-color: blue;
+}
