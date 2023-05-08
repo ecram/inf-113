@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="CSS3 Star Wars BB-8 Droid">
+    <meta property="og:site_name" content="CSS3 Star Wars BB-8 Droid">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="470">
+    <meta property="og:image:height" content="246">
+    <meta property="og:description" content="A Star Wars BB-8 droid created using pure CSS3">
+        <title>CSS3 Star Wars BB-8 Droid</title>
+<style>
+body{
+  background: #752201;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#ground{
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #8AC0CE;
+  z-index: -2;
+  animation:space 50s infinite linear alternate;
+}
+
+#b8head{
+  height:90px;
+    width:180px;
+    border-radius: 90px 90px 0 0;
+  border: 2px solid gray;
+  border-bottom: 0px;
+  position: absolute;
+  background: white;
+  z-index: 2;
+  margin-left: 60px;
+  background-image: 
+  radial-gradient(ellipse farthest-corner at 90px 10px,  white 10%, silver 30% , white 40% , orange 60%, white 10% ,transparent 40%);
+  background-size: 120%;
+  background-position:0px -30px;
+  background-repeat: no-repeat;
+}
+
+#antena{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -20px;
+  width: 2px;
+  height: 40px;
+  background-color: #666;
+  z-index: 1;
+  animation: 7s antena infinite linear;
+}
+#b8head:after{
+  content: " ";
+  display: block;
+  height:40px;
+    width:180px;
+    border-radius: 0 0 90px 90px;
+  border: 2px solid gray;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  margin-left: -2px;
+  margin-top: 90px;
+  border-top: 0px;
+  background-image:
+  radial-gradient(ellipse, white 30% ,orange 60% ,transparent 20%);
+  background-size: 370px 100px;
+  background-position: -90px -50px;
+  box-shadow: 0px 5px 7px silver;
+}
+
+#eyes{
+  content: " ";
+  display: block;
+  height:40px;
+    width:40px;
+    border: 8px solid white;
+    border-radius: 100%;
+    position: absolute;
+    background-image:   radial-gradient(ellipse, gray 55% ,silver 25%);
+    margin-top: 40px;
+    margin-left: 30px;
+    z-index: 2;
+    animation: 7s eyes infinite linear;
+}
+
+#eyes:before{
+  content: " ";
+  display: block;
+  height:25px;
+    width:25px;
+    border-radius: 100%;
+    position: absolute;
+    background-image: radial-gradient(ellipse, silver 55% ,gray 25%);
+    margin-top: 40px;
+    margin-left: 30px;
+    z-index: 2;
+}
+
+#eyes:after{
+  content: " ";
+  display: block;
+  height:15px;
+    width:15px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: gray;
+    margin-top: 50px;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+#b8body{
+  position: absolute;
+  z-index: 0;
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  animation: 1s anima infinite linear;
+  background-image: 
+  radial-gradient(100px at 85px 50%, silver 15% ,white 25% ,orange 40% ,transparent 40%),
+  linear-gradient(0deg, orange 18%, orange 20%),
+  linear-gradient(90deg, orange 18%, orange 20%),
+  radial-gradient(ellipse, silver 15% ,white 25% ,orange 40% ,transparent 40%),
+  radial-gradient(ellipse, white 30% ,orange 40% ,transparent 40%),
+  radial-gradient(ellipse, white 30% ,orange 40% ,transparent 40%),
+  radial-gradient(ellipse, white 30% ,orange 40% ,transparent 40%),
+  radial-gradient(ellipse, white 30% ,orange 40% ,transparent 40%),
+  linear-gradient(0deg, transparent 48%, #2c2c2c 50%, transparent 10%),
+  linear-gradient(0deg, transparent 48%, #2c2c2c 50%, transparent 10%),
+  linear-gradient(90deg, transparent 48%, #2c2c2c 50%, transparent 10%);
+  background-size: 170px, 20px 160px, 160px 20px, 300px, 300px, 300px, 300px, 300px, 300px, 300px, 300px;
+  background-position: center, center,center,center, 200px 0px, -200px 0px, 0px 200px, 0px -200px, center, center;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+#walk{
+  animation: 1s walk infinite;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#shadow{
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  z-index: -2;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 80%);
+  margin-top: 370px;
+  margin-left: -40px;
+}
+
+@keyframes anima{
+  from{
+    transform: rotate(0deg);
+
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes eyes{
+  0%{margin-left: 20px;}
+  80%{margin-left: 20px;}
+  90%{margin-left: 100px;}
+  100%{margin-left: 20px;}
+}
+
+@keyframes antena{
+  0%{margin-left: 200px;}
+  80%{margin-left: 200px;}
+  90%{margin-left: 120px;}
+  100%{margin-left: 200px;}
+}
+
+@keyframes walk{
+  0%{margin-top: 30px;}
+  10%{margin-top: 40px;}
+  20%{margin-top: 40px;}
+  30%{margin-top: 30px;}
+  40%{margin-top: 40px;}
+  50%{margin-top: 30px;}
+  60%{margin-top: 40px;}
+  70%{margin-top: 30px;}
+  80%{margin-top: 30px;}
+  90%{margin-top: 40px;}
+  100%{margin-top: 30px;}
+}
+
+@keyframes space {
+  from {
+  background: rgb(252,252,200);
+  }
+
+  to {
+  background: rgb(207,207,165);
+  }
+}
+
+/*-------------Planets------------*/
+.planet1{
+  position:fixed;
+  z-index:-1;
+  top:400px;
+  right:-100px;
+  height:500px;
+  width:500px;
+  background:radial-gradient(ellipse, rgba(213,206,166,1) 0%,rgba(183,173,112,1) 100%);
+  box-shadow:0px 0px 70px yellow;
+  border-radius:500px;
+
+}
+
+.planet2{
+  position:absolute;
+  z-index:-1;
+  top:130px;
+  right:200px;
+  height:60px;
+  width:60px;
+  background:radial-gradient(ellipse, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%);
+  box-shadow:0px 0px 20px yellow;
+  border-radius:100px;
+  
+}
+
+.planet2:hover,
+.planet3:hover{
+  box-shadow:0px 0px 40px yellow;
+  transition: 0.5s;
+}
+
+.planet1:hover{
+  box-shadow:0px 0px 90px yellow;
+  transition: 0.5s;
+}
+
+.planet3{
+  position:absolute;
+  z-index:-1;
+  top:200px;
+  right:140px;
+  height:60px;
+  width:60px;
+  background:radial-gradient(ellipse, rgba(254,255,232,1) 0%,rgba(214,219,191,1) 100%);
+  box-shadow:0px 0px 20px yellow;
+  border-radius:100px;
+}
+.planets{
+  position:absolute;
+  animation:allplanets 120s infinite linear alternate;
+  height:100px;
+}
+
+@keyframes allplanets {
+  from {
+  top:-70px;
+  right:100px
+  }
+
+  to {
+  top:100px;
+  right: 0px;
+  }
+}
+
+h1{
+  position:absolute;
+  top:410px;
+  left: 30px;
+  z-index: 5; 
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+a.tweet{  
+  position:absolute;
+  top:0px;
+  right: 0px;
+  color:black;  
+  padding:5px 30px 5px 100%;
+  white-space: nowrap;
+  font-weight:bold;
+  text-decoration:none;
+  z-index: 5; 
+}
+
+a.tweet:hover:after,
+a.tweet:focus:after{
+  background:white;
+  color: black; 
+  content:"http://twitter.com/reinaldoferraz";
+  
+}
+
+a.tweet:hover,
+a.tweet:focus{
+  background:white;
+  color: white; 
+}
+
+</style>
+    </head>
+    <body>
+<h1>CSS3 BB-8 Robot</h1>
+<br><br>
+<div id="ground"></div>
+<div id="walk">
+<div id="b8head">
+<div id="eyes"></div>
+</div>
+<div id="b8body"></div>
+<div id="antena"></div>
+<div id="shadow"></div>
+</div>
+<div class="planets">
+  <div class="planet2"></div>
+  <div class="planet3"></div>
+</div>
+  </body>
+</html>
