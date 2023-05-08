@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo onmouseover</title>
+  <script>
+    function cambiarColorFondo() {
+      document.getElementById("elemento").style.backgroundColor = "red";
+    }
+  </script>
+  <style>
+    #elemento {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo onmouseover</h1>
+  <div id="elemento" onmouseover="cambiarColorFondo()"></div>
+</body>
+</html>

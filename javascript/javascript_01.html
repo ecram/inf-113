@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<style type="text/css">
+		button{
+			height: 30px;
+			width: 10%;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>JavaScript</h1>
+	<script type="text/javascript">
+		// ------ Hola Mundo ----------------------------
+		document.write("Hola Mundo"); //Ejemplo
+		document.write("<h2>Hola Mundo</h2>");
+		document.write("<h2 style='color:blue'>Hola Mundo</h2>");
+		// ------ Declaramos una variable ---------------
+		var nom="Pedro", ape="Pascal";
+		// ------ Concatenar ---------------
+		var nom_comp;
+		document.write(nom+"-"+ape);
+		nom_comp = nom+'-'+ape;
+		document.write("<br>"+nom_comp+"<br>");
+		// ------ Ingreso de datos ---------------
+		var nombre;
+		nombre = prompt("Ingrese su nombre: ");
+		document.write("Nombre: "+nombre+"<br>");
+		// ---------------------------------------
+		var n1, n2, total;
+		n1 = parseInt(prompt("Ingrese un número 1:"));
+		n2 = parseInt(prompt("Ingrese un número 2:"));
+		total = n1 + n2;
+		document.write("<h3>"+total+"</h3>"+"<br>");
+		// ---------------------------------------
+		// Bucle infinito cuando ingresamos un número entre 1 y 10
+		var num1=0, num2=0, suma=0;
+		while(num1>=0 && num1<=10){
+			num1 = parseInt(prompt("Ingrese el 1er número:"));
+			num2 = parseInt(prompt("Ingrese el 2do número:"));
+			suma = num1 + num2
+			document.write("<h3>"+suma+"</h3><br>")
+		}
+	</script>
+	<!-- Utilizar una función con botones -->
+	<button onclick="alert('INF-113')">Dale Click</button>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function promedio(num){
+			var s=0, x, p;
+			for (var i = 0; i < num; i++) {
+				x = parseInt(prompt("Número "+(i+1)+": "));
+				s = s + x;
+			}
+			p = s/num;
+			document.write("<h4>Función Promedio:</h4><br>");
+			document.write("<p>El promedio es:"+p+"</p><br>");
+			alert("El promedio es: "+p);
+		}
+
+		function fibonacci(n) {
+			if (isNaN(n) && n>=0){
+				alert("Valor inválido.");
+			}else{
+				if (n>= 1 && n<=2) {
+					var posicion1=0, posicion2=1;
+					document.write("<h4>Función Fibonacci:</h4><br>");
+					document.write("Fibonacci de "+n+"= "+posicion1+", "+posicion2);
+					alert("El Fibonacci de "+n+" es: "+posicion1+", "+posicion2);
+				}else {
+					var posicion1=0, posicion2=1;
+					document.write("<h4>Función Fibonacci:</h4><br>");
+					document.write("Fibonacci de "+n+"= "+posicion1+", "+posicion2);
+					for (var i=2; i<n; i++){
+						var suma = posicion1 + posicion2;
+						document.write(", "+suma);
+						posicion1 = posicion2;
+						posicion2 = suma;
+					}
+					document.write("<br>");
+					alert("El Fibonacci de "+n+" seleccione la opción 5.");
+				}
+			}
+		}
+
+		function factoria(num) {
+			if (num>=0) {
+				var f=1;
+				for (var i=1; i<=num; i++) {
+					f *= i;
+				}
+				document.write("<h4>Función Factorial:</h4><br>");
+				document.write("El Factorial de "+num+" es: "+f);
+				alert("El Factorial de "+num+" es: "+f);
+			}else{
+				alert("Introducir un número mayor a 0.");
+			}
+		}
+
+		function mayor(n1,n2,n3) {
+			var mayor=n1;
+			if (isNaN(n1) || isNaN(n2) || isNaN(n3)){
+				alert("Introduce valores numéricos.");
+			}else{
+				if (n2 >= mayor) {mayor=n2;}
+				if (n3 >= mayor) {mayor=n3;}
+				document.write("<h4>Función Mayor de 3:</h4><br>");
+				document.write("El Mayor de 3 Números es: "+mayor);
+				alert("El Mayor de 3 Números es: "+mayor);
+			}
+		}
+		</script>
+</head>
+<body>
+	<script type="text/javascript">
+		var opcion=0, flag=true;
+		while(flag){
+			opcion = parseInt(prompt("PROGRAMA MENÚ:\nSeleccione una opción\n1. Promedio\n2. Fibonacci\n3. Factorial\n4. Mayor de 3 números\n5. Salir"))
+			switch(opcion) {
+				case 1:
+					var num = parseInt(prompt("Cantidad de Números:"));
+					promedio(num);
+					break;
+				case 2:
+					var num = parseInt(prompt("Cantidad de Números:"));
+					fibonacci(num);
+					break;
+				case 3:
+					var num = parseInt(prompt("Cantidad de Números:"));
+					factoria(num);
+					break;
+				case 4:
+					var num1 = parseInt(prompt("1er Número:"));
+					var num2 = parseInt(prompt("2do Número:"));
+					var num3 = parseInt(prompt("3er Número:"));
+					mayor(num1,num2,num3);
+					break;
+				case 5:
+					flag=false;
+					break;
+				default:
+					alert("Opción inválida");
+					break;
+			}
+		}
+	</script>
+</body>
+</html>
