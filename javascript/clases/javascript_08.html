@@ -1,0 +1,21 @@
+<script type="text/javascript">
+	num = 0;
+	flag = 0;
+	do{
+		num = parseInt(prompt("Ingresa un número entre 0 y 1000:"))
+	}while((num<0) || (num>1000));
+	document.write("Esta correcto: "+num)
+
+	for(i=2; i<num; i++){
+		if((num%i)==0){
+			flag=1
+			break;
+		}
+	}
+	
+	if(flag == 0){
+		alert(`El número ${num} es primo.`);
+	}else{
+		alert(`El número ${num} es no primo.`);
+	}
+</script>

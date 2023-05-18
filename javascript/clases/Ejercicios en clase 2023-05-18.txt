@@ -1,0 +1,13 @@
+Ejercicios:
+
+1. Determinar si un número es primo o no. El numero tecleado deberá estar entre 0 y 1000. Si es primo lo mostrará en una ventana alert.
+
+2. Diseñar un script que pida un número mayor que cero y devuelva la suma de todos los números pares desde cero al número introducido. Mostrará la suma y volverá a pedir otro número hasta que el usuario teclee un 0.
+
+3. Escribir un script para determinar si el numero introducido por el usuario es un palíndromo, es decir, un número que se lee igual del derecho que del revés. Si es palíndromo lo mostraá en una ventana alert.
+
+4. Factorial de un número.
+
+5. Imprimir los números del 10 al 1 en orden descendente con for.
+
+6. Sumar los dígitos de un número e imprimir en la consola.

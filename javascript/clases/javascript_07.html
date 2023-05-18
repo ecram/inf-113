@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	alert('Ingresa la Fecha de Nacimiento')
+	var dia, mes, anno, dias;
+	var fechaActual = new Date()
+	dia = parseInt(prompt('Día del mes','Ejemplo: 10.'))
+	mes = parseInt(prompt('Mes','Ejemplo: 9, que es septiembre.'))
+	anno = parseInt(prompt('ano','Ejemplo: 2000'))
+	var actual_dia = fechaActual.getDate();
+	// Los meses empiezan desde 0, po0r lo que se suma 1.
+	var actual_mes = fechaActual.getMonth() + 1;
+	var actual_anno = fechaActual.getFullYear();
+	var anno_cero = 365 - (dia + ((mes-1)*30));
+	var dias_anno = (actual_anno - anno -1)*365
+	dias = anno_cero + dias_anno + actual_dia + (actual_mes*30);
+	document.write("Ya haz vivido: "+dias+" días");
+</script>

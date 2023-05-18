@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hola</title>
+	<script>
+		var n = parseInt(prompt("Ingresa un numero mayor a 9: ",""));
+		var cn = n;
+		var nn = 0;
+
+		while (cn != 0) {
+			d = cn % 10;
+			cn = Math.trunc(cn / 10);
+			nn = nn * 10 + d;
+		}
+
+		if (n == nn) {
+			document.write(`El numero ${n} es palindromo.`);
+		} else {
+			document.write(`El numero ${n} no es palindromo.`);
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
