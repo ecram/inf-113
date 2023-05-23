@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cambio de color</title>
+	<style type="text/css">
+		#myText{
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<p id="myText">Texto de ejemplo</p>
+	<button id="colorButton" ondblclick="changeColor()">Cambiar color</button>
+	<script type="text/javascript">
+		var button = document.getElementById("colorButton");
+		var text = document.getElementById("myText");
+		var isColorChanged = false;
+
+		function changeColor(){
+			if (isColorChanged) {
+				text.style.color = "black";
+				text.style.backgroundColor = originalBgColor;
+			}else{
+				text.style.color = "red";
+				text.style.backgroundColor = "yellow";
+			}
+			isColorChanged = !isColorChanged;
+		}
+	</script>
+</body>
+</html>
