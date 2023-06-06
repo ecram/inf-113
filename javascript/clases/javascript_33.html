@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 33</title>
+</head>
+<body onload="activarPrimerControl()">
+	<script type="text/javascript">
+		function activarPrimerControl()
+		{
+			document.forms["form1"].elements["nombre"].focus();
+		}
+	</script>
+	<h3>Ejercicio 33</h3>
+	<form name="form1">
+		Ingrese su nombre:
+		<input type="text" name="nombre"><br>
+		Ingrese su edad:
+		<input type="text" name="edad"><br>
+		<input type="button" value="Confirmar">
+	</form>
+</body>
+</html>

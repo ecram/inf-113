@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 29</title>
+	<script type="text/javascript">
+		function validar()
+		{
+			if (document.form1.text1.value.length<5)
+			{
+				alert("Ingrese al menos 5 caracteres");
+				document.form1.text1.value="";
+			}else{
+				alert("Contraseña incorrecta.");
+			}
+		}
+	</script>
+</head>
+<body>
+<h3>Ejercicio 29</h3>
+<form name="form1">
+	Ingrese Clave (al menos 5 caracteres): 
+	<input type="password" name="text1">
+	<input type="button" onclick="validar()" value="Enviar">
+</form>
+</body>
+</html>
