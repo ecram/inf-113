@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onblur Event Page</title>
+    <script type="text/javascript">
+        function checkField1() {
+            var field = document.getElementById("field1").value;
+            if(field.length < 5){
+                document.getElementById("message1").innerHTML = "Too short";
+            }else{
+                document.getElementById("message1").innerHTML = "That's better";
+            }
+        }
+        function checkField2() {
+            var field = document.getElementById("field2").value;
+            if(field != "") //!= means  not equal
+                document.getElementById("message2").innerHTML = "Input accepted";
+            else
+                document.getElementById("message2").innerHTML = "You must provide input!";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript onblur Event Test</h1>
+    <input id="field1" type="text" onblur="checkField1()"> <br> <span id="message1"></span> <br>
+    <input id="field2" type="text" onblur="checkField2()"> <br> <span id="message2"></span> <br>
+    <input id="field3" type="text"> <span id="message3"></span>
+</body>
+</html>

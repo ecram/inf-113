@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Page</title>
+    <script type="text/javascript">
+        function myPrompt(){
+            var person = prompt("Please enter your name", "Harry Potter"); //The second string optional
+            if(person != null && person != ""){ //!= means "not equal to"
+                document.getElementById("test").innerHTML = "Hello " + person + "! How are you today?";
+            }else{
+                alert("Hey, you didn't type anything!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Prompt Box</h1>
+    <button onclick="myPrompt()">Prompt Test</button>
+    <p id="test"></p>
+</body>
+</html>

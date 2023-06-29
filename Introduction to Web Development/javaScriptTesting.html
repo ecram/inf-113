@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function doMath(){
+            var x = 2;
+            var y = 10;
+            var z = 0;
+            var answer;
+            
+            try {
+                if (z === 0) {
+                    throw new Error("Division by zero is not allowed.");
+                }
+                answer = x * y / z;
+            } catch (error) {
+                document.getElementById("output").innerHTML = "Error: " + error.message;
+                return;
+            }
+            
+            document.getElementById("output").innerHTML = "The result is " + answer + "!";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Testing</h1>
+    <button onclick="doMath();">Do the Math</button>
+    <p id="output" style="color: green; font-size: 200%;"></p>
+</body>
+</html>
