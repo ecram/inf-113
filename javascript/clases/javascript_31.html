@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 31</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function vaciar(control)
+		{
+			control.value='';
+		}
+		function verificarEntrada(control)
+		{
+			if (control.value=='')
+				alert('Debe ingresar datos');
+		}
+	</script>
+<h3>Eventos onFocus y onBlur</h3>
+<form name="form1">
+	Ingrese su nombre:
+	<input type="text" name="nombre" onfocus="verificarEntrada(this)"><br>
+	Ingrse su edad:
+	<input type="text" name="edad" onfocus="vaciar(this)" onblur="verificarEntrada(this)"><br>
+	<input type="button" value="Confirmar">
+</form>
+</body>
+</html>

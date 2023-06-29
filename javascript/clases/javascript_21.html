@@ -1,0 +1,14 @@
+<p id="id1" title="Hola" style="background-color: red">Ejemplo</p>
+<button type="button" onclick="funcionA()">Quiero cambiar</button>
+<script>
+  function funcionA() {
+    if (document.getElementById("id1").innerHTML.match("Ejemplo")) {
+      document.getElementById("id1").style = "background-color:yellow";
+      document.getElementById("id1").innerHTML = "Ha cambiado";
+    } else{
+        document.getElementById("id1").style = "background-color:red";
+      document.getElementById("id1").innerHTML = "Ejemplo";
+
+    }
+  }
+</script>

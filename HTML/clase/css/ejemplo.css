@@ -1,0 +1,12 @@
+/* Definición de estilos en un archivo aparte */
+/* Estilo para el documento */
+BODY {font-family: Verdana,sans-serif; font-size:x-small; margin-
+left:0.25in; margin-right:0.25in}
+/* Estilo para la cabecera de nivel 2 */
+H2 {font-family: Verdana,sans-serif; font-size: 14pt; color: red}
+/* Estilos para otras etiquetas */
+B, TD {font-family: Verdana,sans-serif; font-size:x-small; color:olive}
+TH {font-family: Verdana,sans-serif; font-size: x-small; color: white;
+background-color: #0080C0}
+PRE, TT, CODE {font-family: Courier New, Courier; font-size: 9pt; color:
+maroon}

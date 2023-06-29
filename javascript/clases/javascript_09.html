@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	var num = 0;
+	var flag = 1;
+	var suma = 0;
+	do{
+		num = parseInt(prompt("Ingresa un número mayor que 0:"))
+		if (num == 0){
+			flag = 1;
+		}
+	}while(num<0);
+
+	if(flag == 0){
+		for(i=2; i<=num; i+=2){
+			suma += i;
+		}
+		alert(`El número ${num} es primo.`);
+	}
+	
+	
+	if(flag == 0){
+		
+	}else{
+		alert(`El número ${num} es no primo.`);
+	}
+</script>

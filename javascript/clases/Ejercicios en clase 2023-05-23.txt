@@ -1,0 +1,11 @@
+Resolver los siguientes ejercicios:
+
+1. Crear una función inversa() que calcule la inversión de una cadena y lo retorne. Por ejemplo, la cadena «Hola Mundo» debería retornar la cadena «odnum aloh» (retornar todo el String en minúsculas).
+
+2. Ejercicio de cálculo de área: Crea una función llamada "calcularArea" que reciba la base y la altura de un triángulo como parámetros y devuelva el área del triángulo.
+
+3. Ejercicio de validación de contraseña: Crea una función llamada "validarContrasena" que reciba una contraseña como parámetro y devuelva true si la contraseña tiene al menos 8 caracteres y false en caso contrario.
+
+4. Crea un menu con las opciones anteriores, adicionando la opción salir (4. Salir) y que genere un mensaje de error en caso que elija una opción incorrecta.
+
+5. Generar un menu para sumar, restar y multiplicar matrices de 3x3 en JavaScript. Adicionar la opción salir. (Siguiente clase).

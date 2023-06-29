@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function promedio(){
+			var nombre, nota1, nota2, pro;
+			nombre = prompt('Nombre:', 'Escribe aquı́');
+			nota1 = prompt('Primera nota:', 'Escribe aquı́');
+			nota2 = prompt('Segunda nota:', 'Escribe aquı́');
+			nota1 = parseInt(nota1);
+			nota2 = parseInt(nota2);
+			pro = (nota1 + nota2) / 2;
+			if (pro >= 5) {
+			document.write(nombre + ' aprueba con ' + pro);
+			}}
+	</script>
+</head>
+<body>
+	<button onclick="promedio()">Promedio</button>
+</body>
+</html>

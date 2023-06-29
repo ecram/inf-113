@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    let sw = 1;
+    while(sw == 1){
+       let n = parseInt(prompt("Ingrese un numero entero: ","0 para salir"));
+       if(n == 0){
+            sw = 0;
+       } else{
+        let suma = 0;
+        for(let i=2; i<=n; i=i+2){
+            suma = suma + i;
+        }
+        alert(suma);
+       }
+    }   
+</script>

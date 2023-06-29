@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 30</title>
+</head>
+<body>
+<h3>Ejercicio 30</h3>
+<script type="text/javascript">
+	function cambiarColor()
+	{
+		document.form1.text1.value=document.form1.select1.selectedIndex;
+		document.form1.text2.value=document.form1.select1.options[document.form1.select1.selectedIndex].text;
+		document.form1.text3.value=document.form1.select1.options[document.form1.select1.selectedIndex].value;
+	}
+</script>
+<form name="form1">
+	<select size="1" name="select1" onchange="cambiarColor()">
+		<option value="0xff0000">Rojo</option>
+		<option value="0x00ff00">Verde</option>
+		<option value="0x0000ff">Azul</option>
+	</select>
+	<br>
+	Número de índice seleccionado del objeto Select: <input type="text" name="text1"><br>
+	Texto seleccionado: <input type="text" name="text2"><br>
+	Valor asociado: <input type="text" name="text3">
+</form>
+</body>
+</html>

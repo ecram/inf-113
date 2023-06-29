@@ -1,0 +1,25 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Segundo ejemplo de JavaScript</title>
+</head>
+<body>
+	<h1>Este es el escudo de mi equipo</h1>
+	<img id="miescudo" onclick="changeImage()" src="img/escudo_1.jpg" width="100">
+	<p>Haz click sobre él.</p>
+	<script>
+		function changeImage() {
+			var arreglo_direccion = [30];
+			arreglo_direccion[0] = 'img/escudo_1.jpg';
+			var image = document.getElementById('miescudo');
+			for i=0; i<30; i++{
+				if (image.src.match(arreglo_direccion[i])) {
+				image.src = arreglo_direccion[i+1];
+			}
+			}
+		}
+</script>
+</body>
+</html>

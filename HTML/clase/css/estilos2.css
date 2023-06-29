@@ -1,0 +1,43 @@
+#p1{
+	font-size: 25px;
+	font-style: italic;
+	color: black;
+}
+
+#p2{
+	background-color: #797d7f;
+	font-size: 20px;
+	text-align: left;
+	color: #2471a3;
+	font-style: italic;
+}
+
+body{
+	background: rgb(251,251,251);
+	background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(172,241,255,1) 46%, rgba(81,226,255,1) 100%, rgba(255,238,241,1) 3900%);
+}
+
+#nuevo1{
+	font-family: Verdana;
+	text-decoration: underline;
+}
+
+#nuevo2{
+	background-color: #FFF;
+	font-weight: bold;
+}
+
+font{
+	text-decoration: underline;
+	font-family: Arial;
+}
+
+th{
+	background-color: #777;
+}
+
+td{
+	text-decoration: underline;
+	font-family: Times;
+	background-color: #909497;
+}

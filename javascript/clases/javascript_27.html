@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Programa Sueldos</title>
+</head>
+<body>
+	<script type="text/javascript" language="JavaScript">
+		function cargar(sueldos)
+		{
+			var f;
+			for(f=0; f<sueldos.length;f++)
+			{
+				var v = parseFloat(prompt('Ingrese sueldo:',''));
+				sueldos[f]=v;
+			}
+		}
+
+		function calcularGastos(sueldos)
+		{
+			var total=0;
+			for (var f=0; f<sueldos.length; f++) 
+			{
+				total=total+sueldos[f];
+			}
+			document.write('Listado de sueldos<br>');
+			for(f=0;f<sueldos.length;f++)
+			{
+				document.write(sueldos[f]+'<br>');
+			}
+			document.write('Total de gastos en sueldo: '+total);
+		}
+		document.write('<h3>Programa Sueldos</h3>');
+		var sueldos;
+		sueldos = new Array(5);
+		cargar(sueldos);
+		calcularGastos(sueldos);
+	</script>
+
+</body>
+</html>
